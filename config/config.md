@@ -135,7 +135,7 @@ This method has no parameters.
 **Return Values**  
 All configuration values, or an empty array.
 
-####Example #1 (Return all configuration values)
+####Examples
 
     $config->set('database', [
         'driver' => 'mysql',
