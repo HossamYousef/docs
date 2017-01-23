@@ -1,6 +1,6 @@
 ##Debug
 
-The `Avoxx\Utility\Debug`  offers a secure static method that displays structured information about a variable.
+The Debug class offers a secure static method that displays structured information about a variable.
 
 ##Contents
 
