@@ -1,6 +1,6 @@
 ##ArrayHelper
 
-The `Avoxx\Utility\ArrayHelper` class contains useful array helpers.
+The ArrayHelper class contains useful array helpers.
 
 ##Contents
 
@@ -137,7 +137,7 @@ Returns the last element of an array passing a given truth test.
 `default` = The default value, which will be returned if no value passes the truth test.
 
 **Return Values**  
-Returns he last array element that passed the truth test, or the default value.
+Returns the last array element that passed the truth test, or the default value.
 
 ####Examples
 
