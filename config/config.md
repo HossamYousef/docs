@@ -1,6 +1,6 @@
 ##Config
 
-The `Avoxx\Config\Config` class is a file configuration loader. Supported file types are
+The Config class is a file configuration loader. Supported file types are
 `INI`, `PHP`, `XML`, `JSON` and `YAML`.
 
 ##Contents
@@ -17,9 +17,9 @@ The `Avoxx\Config\Config` class is a file configuration loader. Supported file t
 
 ###Instantiate & load() {#instantiate-and-load}
 
-Create a new `Config` instance and load configuration files.
+Creates a new `Config` instance and loads configuration files.
 
-    $config = new Config([string|array $file = null]);
+    new Avoxx\Config\Config([string|array $file = null]);
 
 >**NOTE**  
 If you load multiple files with the same configuration key,
@@ -32,7 +32,7 @@ When loading a directory, the files are loaded in by name alphabetically.
 **Return Values**  
 No value is returned.
 
-####Exampless
+####Examples
 
     // Load a single configuration file
     $config = new Config('./config/database.yaml');
