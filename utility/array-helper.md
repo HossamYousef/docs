@@ -23,7 +23,7 @@ The ArrayHelper class contains useful array helpers.
 Checks whether a value is an array or object
 that implements the <a href="http://php.net/manual/en/class.arrayaccess.php" target="_blank">ArrayAccess</a> interface.
 
-    ArrayHelper::accessible(array|\ArrayAccess $value);
+    ArrayHelper::accessible(\ArrayAccess|array $value);
 
 **Parameters**  
 `$value` = An array or object that implements the ArrayAccess interface.
@@ -47,7 +47,7 @@ If the `$value` is an array or object that implements the ArrayAccess interface,
 
 Checks whether a key is present in an array.
 
-    ArrayHelper::exists(array|\ArrayAccess $array, string|int $key);
+    ArrayHelper::exists(\ArrayAccess|array $array, string|int $key);
 
 **Parameters**  
 `$array` = The array to be checked.  
@@ -66,7 +66,7 @@ Returns `true` if the key is present and `false` otherwise.
 
 Retrieves a value from a deeply nested array.
 
-    ArrayHelper::get(array|\ArrayAccess $array, string|int $key [, mixed $default = null]);
+    ArrayHelper::get(\ArrayAccess|array $array, string|int $key [, mixed $default = null]);
 
 **Parameters**  
 `$array` = The array to be checked.  
@@ -98,7 +98,7 @@ Returns the array value, if it exists in the array, or the default value.
 
 Returns the first element of an array passing a given truth test.
 
-    ArrayHelper::first(array|\ArrayAccess $array [, callable|null  $callback = null [, mixed $default = null]]);
+    ArrayHelper::first(array $array [, callable $callback = null [, mixed $default = null]]);
  
 **Parameters**  
 `$array` = The array to be checked.  
@@ -129,7 +129,7 @@ Returns the first array element that passed the truth test, or the default value
 
 Returns the last element of an array passing a given truth test.
 
-    ArrayHelper::last(array|\ArrayAccess $array [, callable|null  $callback = null [, mixed $default = null]]);
+    ArrayHelper::last(array $array [, callable $callback = null [, mixed $default = null]]);
 
 **Parameters**  
 `$array` = The array to be checked.  
@@ -155,7 +155,7 @@ Returns the last array element that passed the truth test, or the default value.
 
 Checks whether a given element or elements exists in an array.
 
-    ArrayHelper::has(array|\ArrayAccess $array, string|array $key);
+    ArrayHelper::has(\ArrayAccess|array $array, string|array $key);
 
 **Parameters**  
 `$array` = The array to be checked.  
@@ -175,7 +175,7 @@ Returns `true`, if the array element(s) exists and `false` otherwise.
 
 Filters the array using the given Closure.
 
-    ArrayHelper:where(array|\ArrayAccess $array, callable $callback);
+    ArrayHelper:where(array $array, callable $callback);
 
 **Parameters**  
 `$array` = The array to be checked.  
@@ -196,7 +196,7 @@ Returns the result of the callback function.
 
 Returns only the specified key/value pairs from the given array.
 
-    ArrayHelper::only(array|\ArrayAccess $array, array|string $key);
+    ArrayHelper::only(array $array, array|string $key);
 
 **Parameters**  
 `$array` = The array to be checked.  
@@ -225,7 +225,7 @@ Returns the specified key/value pairs from the given array.
 
 Removes a given key/value pair from a deeply nested array.
 
-    ArrayHelper::forget(array|\ArrayAccess &$array, array|string $keys);
+    ArrayHelper::forget(array $array, array|string $keys);
 
 **Parameters**  
 `$array` = The array to be checked.  
