@@ -46,7 +46,7 @@ No value is returned.
     // Load a configuration file directory
     $config = new Avoxx\Config\Config('./config');
 
-    // Load a configuration file with load() meethod
+    // Load a configuration file with load() method
     $config->load('./config/app.ini');
 
 ###set() {#set}
