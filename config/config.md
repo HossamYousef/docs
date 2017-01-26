@@ -35,7 +35,7 @@ No value is returned.
 ####Examples
 
     // Load a single configuration file
-    $config = new Config('./config/database.yaml');
+    $config = new Avoxx\Config\Config('./config/database.yaml');
     
     // Load a configuration file array
     $config = new Config([
@@ -44,7 +44,7 @@ No value is returned.
     ]);
 
     // Load a configuration file directory)
-    $config = new Config('./config/');
+    $config = new Avoxx\Config\Config('./config');
 
     // Load a configuration file with load() meethod
     $config->load('./config/app.ini');
