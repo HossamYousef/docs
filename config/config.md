@@ -38,12 +38,12 @@ No value is returned.
     $config = new Avoxx\Config\Config('./config/database.yaml');
     
     // Load a configuration file array
-    $config = new Config([
+    $config = new Avoxx\Config\Config([
         './config/app.json',
         './config/database.yml',
     ]);
 
-    // Load a configuration file directory)
+    // Load a configuration file directory
     $config = new Avoxx\Config\Config('./config');
 
     // Load a configuration file with load() meethod
